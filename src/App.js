@@ -7,6 +7,7 @@ import Rank from './components/Rank/Rank';
 import SingIn from './components/SingIn/SingIn';
 import Register from './components/Register/Register';
 import Container from '@mui/material/Container';
+import Devconn from './components/Devconn/Devconn';
 // import AlertMessage from './components/AlertMessage/AlertMessage';
 
 
@@ -163,6 +164,7 @@ class App extends React.Component {
 
           }
         </Container>
+        <Devconn />
       </Fragment>
     );
   }

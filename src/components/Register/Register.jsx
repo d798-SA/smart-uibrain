@@ -23,7 +23,7 @@ export default class Register extends React.Component {
             errorsState: {
                 InputName: 'name is required',
                 InputEmail: 'email is required',
-                InputPassword: 'password is should be greater then 8 character'
+                InputPassword: 'password:required'
             }
         }
     }
@@ -93,7 +93,7 @@ export default class Register extends React.Component {
         if (password.length <= 8) {
             return this.setState(prevstate => ({
                 errorsState: Object.assign(prevstate.errorsState, {
-                    InputPassword: 'password is should be greater then 8 character'
+                    InputPassword: 'password:required'
                 })
             }));
 
@@ -194,7 +194,7 @@ export default class Register extends React.Component {
 
                 <TextField
                     onChange={event => this.onPasswordChange(event)}
-                    label="Your password"
+                    label="Your password:greater then 8 character"
                     onBlur={this.handleOnBlurPassword.bind(this)}
                     error={typeof this.state.errorsState?.InputPassword != "undefined"}
                     id="password"
