@@ -1,0 +1,18 @@
+.form {
+    width: 100%;
+    height: auto;
+  
+    opacity: 1;
+}
+
+#mui-1 {
+    box-sizing: content-box;
+}
+
+
+
+@media(max-width:414px){
+    .center{
+        flex-direction: column;
+    }
+}
